@@ -15,6 +15,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/custom.css" rel="stylesheet" />
+        <!-- css para pageclip -->
+        <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -30,7 +32,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Quien Soy</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Lo que hago</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/funstuff/funindex.html">Fun Stuff</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#funstuff">Fun Stuff</a></li>
                     </ul>
                 </div>
             </div>
@@ -107,16 +109,43 @@
                 </div>
             </div>
         </section>
+        <!-- Funstuff-->
+         <section class="funstuff" id="funstuff">
+            <div class="container">
+                <div class="row">
+                    <div class="card border-primary" style="width: 25rem;">
+                        <img class="card-img-top" src="assets/img/PiezaRender2021.png" alt="">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Ir a galeria</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 25rem;">
+                        <img class="card-img-top" src="assets/img/PiezaRender2021.png" alt="">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Ir a galeria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Signup-->
         <section class="signup-section" id="signup">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Interesado? Comisioname</h2>
-                        <form action="https://discordapp.com/users/169900596243988480">
-                            <button class="btn btn-primary mx-auto" type="submit">Contacto en Discord</button>
+                        <h2 class="text-white mb-5">Interesado? Contactame</h2>
+                        <form class="form-inline d-flex pageclip-form" action="https://send.pageclip.co/HW5ngYcLW3P2UMNlm9AxogXyJwRAWhGy/contact-form" method="post">
+                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Ingrese su correo..." />
+                            <button class="btn btn-primary mx-auto pageclip-form__submit" type="submit">Enviar correo</button>
                         </form>
+                        <br><br><br>
+                        <h3 class="text-white mb-5">O alternativamente, contactame en discord</h2>
+                            <form action="https://discordapp.com/users/169900596243988480">
+                                <button class="btn btn-primary mx-auto" type="submit">Contacto en Discord</button>
+                            </form>
                     </div>
                 </div>
             </div>
@@ -172,5 +201,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- script para pageclip -->
+        <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     </body>
 </html>
